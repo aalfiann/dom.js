@@ -5,9 +5,11 @@
  * Supports
  *
  * @author Dawid Kraczowski <Krac>
+ * @author M ABD AZIZ ALFIAN
  * @license MIT
  */
-;(function (window, document, undefined) {
+(function (window, document, undefined) {
+    "use strict";
 
     /**
      * DOM global object

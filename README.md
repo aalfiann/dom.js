@@ -1,3 +1,5 @@
+> This is a forked version, because the original project seems not active.
+
 DOM.js
 ======
 
