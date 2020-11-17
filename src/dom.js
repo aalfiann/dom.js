@@ -6,7 +6,9 @@
  *
  * @author Dawid Kraczowski <Krac>
  * @author M ABD AZIZ ALFIAN
+ * @version 2.0.1
  * @license MIT
+ * @repository https://github.com/aalfiann/dom.js
  */
 "use strict";
 

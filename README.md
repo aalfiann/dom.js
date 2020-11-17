@@ -15,7 +15,7 @@ API Reference
 
 ### Table of contents
 
- - DOM traversal
+ - **DOM traversal**
     - [Dom.find](#domfindselector)
     - [Dom.id](#domidid)
     - [Dom.findByTagName](#domfindbytagnametagname)
@@ -26,16 +26,16 @@ API Reference
     - [Dom.previous](#dompreviouselement)
 
 
- - DOM manipulation
+ - **DOM manipulation**
     - [Dom.offset](#domoffsetelement)
     - [Dom.width](#domwidthelement)
     - [Dom.height](#domheightelement)
     - [Dom.attribute](#domattributeelement-attribute)
     - [Dom.css](#domcsselement-style)
     - [Dom.getClass](#domgetclasselement)
-    - [Dom.addClass](#domaddclasselement-classname)
+    - [Dom.addClass](#domaddclasselementnodelistarray-classname)
     - [Dom.hasClass](#domhasclasselement-classname)
-    - [Dom.removeClass](#domremoveclasselement-classname)
+    - [Dom.removeClass](#domremoveclasselementnodelistarray-classname)
     - [Dom.create](#domcreatehtml)
     - [Dom.html](#domhtmlelement-html)
     - [Dom.text](#domtextelement-text)
@@ -48,19 +48,19 @@ API Reference
     - [Dom.template](#domtemplatetpl-hash)
     - [Dom.draggable](#domdraggableelement-options)
 
- - Utils
+ - **Utils**
     - [Dom.requestAnimationFrame](#domrequestanimationframecallback)
     - [Dom.cancelAnimationFrame](#domcancelanimationframeid)
     - [Dom.isElement](#domiselementobject)
     - [Dom.isNode](#domisnodeobject)
 
- - Event handling
+ - **Event handling**
     - [Dom.addListener](#domaddlistener-elementnodelistarray-event-listener)
     - [Dom.removeListener](#domremovelistener-elementnodelistarray-event-listener)
     - [Dom.hasListener](#domhaslistener-element-event-listener)
     - [Dom.dispatch](#domdispatch-elementnodelistarray-event-options)
 
- - [Dom Events](#dom-events)
+ - **Dom Events**
     - [Mouse Events](#mouse-events)
         - `click`
         - `dblclick`
@@ -94,6 +94,7 @@ Finds HTMLElements that match css pattern.
 
 #### [Example](examples/dom.find.html)
 
+> [Back to top](#table-of-contents)
 
 ### Dom.id(`id`)
 
@@ -104,6 +105,8 @@ Returns HTMLElement with given id
 
 #### [Example](examples/dom.id.html)
 
+> [Back to top](#table-of-contents)
+
 ### Dom.findByTagName(`tagName`)
 
 Finds HTMLElements that match given tag name
@@ -112,6 +115,8 @@ Finds HTMLElements that match given tag name
  - `tagName` tag's name eg.(a, span, div, etc)
 
 #### [Example](examples/dom.findbytagname.html)
+
+> [Back to top](#table-of-contents)
 
 ### Dom.findByClass(`className`)
 
@@ -124,6 +129,8 @@ Finds HTMLElements that match given class name
 
 #### [Example](examples/dom.findbyclassname.html)
 
+> [Back to top](#table-of-contents)
+
 ### Dom.parent(`element`)
 
 Gets the parent of the html element
@@ -132,6 +139,8 @@ Gets the parent of the html element
  - `element` html element
 
 #### [Example](examples/dom.parent.html)
+
+> [Back to top](#table-of-contents)
 
 ### Dom.children(`element`, `tag`)
 
@@ -143,6 +152,8 @@ Gets children elements of the html element
 
 #### [Example](examples/dom.children.html)
 
+> [Back to top](#table-of-contents)
+
 
 ### Dom.next(`element`)
 
@@ -153,6 +164,8 @@ Gets following sibling element of the HTMLElement
 
 #### [Example](examples/dom.next.html)
 
+> [Back to top](#table-of-contents)
+
 ### Dom.previous(`element`)
 
 Gets previous sibling element of the HTMLElement
@@ -161,6 +174,8 @@ Gets previous sibling element of the HTMLElement
  - `element` html element
 
 #### [Example](examples/dom.previous.html)
+
+> [Back to top](#table-of-contents)
 
 ### Dom.offset(`element`)
 
@@ -178,6 +193,8 @@ Returned object contains properties:
 
 #### [Example](examples/dom.offset.html)
 
+> [Back to top](#table-of-contents)
+
 ### Dom.width(`element`)
 
 Returns width of the element
@@ -187,6 +204,8 @@ Returns width of the element
 
 #### [Example](examples/dom.offset.html)
 
+> [Back to top](#table-of-contents)
+
 ### Dom.height(`element`)
 
 Returns height of the element
@@ -195,6 +214,8 @@ Returns height of the element
  - `element` html element
 
 #### [Example](examples/dom.offset.html)
+
+> [Back to top](#table-of-contents)
 
 ### Dom.attribute(`element`, `attribute`)
 
@@ -206,6 +227,8 @@ Gets or sets element's attribute(s) if the attribute(s) is not defined this meth
 
 #### [Example](examples/dom.attribute.html)
 
+> [Back to top](#table-of-contents)
+
 ### Dom.css(`element`, `style`)
 
 Sets or gets HTMLElement's style
@@ -216,6 +239,8 @@ Sets or gets HTMLElement's style
 
 #### [Example](examples/dom.css.html)
 
+> [Back to top](#table-of-contents)
+
 ### Dom.getClass(`element`)
 
 Gets css classes of the given element
@@ -224,6 +249,8 @@ Gets css classes of the given element
  - `element` html element
 
 #### [Example](examples/dom.getclass.html)
+
+> [Back to top](#table-of-contents)
 
 ### Dom.addClass(`element|nodeList|Array`, `className`)
 
@@ -235,6 +262,8 @@ Assignes css class(es) to the html element(s)
 
 #### [Example](examples/dom.addclass.html)
 
+> [Back to top](#table-of-contents)
+
 ### Dom.hasClass(`element`, `className`)
 
 Checks whether html element is assigned to the given class(es)
@@ -244,6 +273,8 @@ Checks whether html element is assigned to the given class(es)
  - `className` class that function will check against
 
 #### [Example](examples/dom.hasclass.html)
+
+> [Back to top](#table-of-contents)
 
 ### Dom.removeClass(`element|nodeList|Array`, `className`)
 
@@ -255,6 +286,8 @@ Removes html element's assignment to the css class(es)
 
 #### [Example](examples/dom.removeclass.html)
 
+> [Back to top](#table-of-contents)
+
 ### Dom.create(`html`)
 
 Creates and returns html element created from provided content
@@ -264,6 +297,8 @@ Creates and returns html element created from provided content
 
 #### [Example](examples/dom.create.html)
 
+> [Back to top](#table-of-contents)
+
 ### Dom.copy(`element`)
 
 Creates a copy of a node, and returns the clone.
@@ -272,6 +307,8 @@ Creates a copy of a node, and returns the clone.
  - `element` html element
 
 #### [Example](examples/dom.copy.html)
+
+> [Back to top](#table-of-contents)
 
 ### Dom.html(`element` `html`)
 
@@ -283,6 +320,8 @@ Gets or sets inner html of HTMLElement
 
 #### [Example](examples/dom.html.html)
 
+> [Back to top](#table-of-contents)
+
 ### Dom.text(`element`, `text`)
 
 Gets or sets text value of the HTML element
@@ -292,6 +331,8 @@ Gets or sets text value of the HTML element
  - `text` text string
 
 #### [Example](examples/dom.text.html)
+
+> [Back to top](#table-of-contents)
 
 ### Dom.append(`element`, `html`)
 
@@ -303,6 +344,8 @@ Inserts content specified by the html argument at the end of HTMLElement
 
 #### [Example](examples/dom.append.html)
 
+> [Back to top](#table-of-contents)
+
 ### Dom.prepend(`element`, `html`)
 
 Inserts content specified by the html argument at the beginning of HTMLElement
@@ -312,6 +355,8 @@ Inserts content specified by the html argument at the beginning of HTMLElement
  - `html` html string or element that will be inserted
 
 #### [Example](examples/dom.prepend.html)
+
+> [Back to top](#table-of-contents)
 
 ### Dom.after(`element`, `html`)
 
@@ -323,6 +368,8 @@ Inserts content specified by the html argument after the HTMLElement
 
 #### [Example](examples/dom.after.html)
 
+> [Back to top](#table-of-contents)
+
 ### Dom.before(`element`, `html`)
 
 Inserts content specified by the html argument before the HTMLElement
@@ -332,6 +379,8 @@ Inserts content specified by the html argument before the HTMLElement
  - `html` html string or element that will be inserted
 
 #### [Example](examples/dom.before.html)
+
+> [Back to top](#table-of-contents)
 
 ### Dom.replace(`element`, `html`)
 
@@ -343,6 +392,8 @@ Replaces given html element with content specified in html parameter
 
 #### [Example](examples/dom.replace.html)
 
+> [Back to top](#table-of-contents)
+
 ### Dom.remove(`element`)
 
 Removes HTMLElement from dom tree
@@ -352,11 +403,15 @@ Removes HTMLElement from dom tree
 
 #### [Example](examples/dom.remove.html)
 
+> [Back to top](#table-of-contents)
+
 #### Parameters
  - `html` string containings element's html
  - `className` class(es) that will be removed from the element's class attribute
 
 #### [Example](examples/dom.removeclass.html)
+
+> [Back to top](#table-of-contents)
 
 ### Dom.template(`tpl`, `hash`)
 
@@ -368,6 +423,8 @@ from hash object. Supports functions, numbers and strings.
  - `hash` hash object
 
 #### [Example](examples/dom.template.html)
+
+> [Back to top](#table-of-contents)
 
 ### Dom.draggable(`element`, `options`)
 
@@ -387,6 +444,8 @@ Makes html element draggable.
  - `constrain` _HTMLElement_ constrains movement to element's area or given box `[x0, y0, width, height]`
 
 #### [Example](examples/dom.draggable.html)
+
+> [Back to top](#table-of-contents)
 
 
 
@@ -431,6 +490,8 @@ You can check list of aliases, explanation and event names [here](#dom-events).
 
 #### [Example](examples/dom.addlistener.html)
 
+> [Back to top](#table-of-contents)
+
 ### Dom.removeListener (`element|nodeList|Array`, `event`, `listener`)
 
 Removes javascript listener from the element(s) for the given event type.
@@ -460,6 +521,8 @@ Determine whether a supplied listener is attached to the element
  - `element` a DOMElement, NodeList or just an array with DOMElements
  - `event` a dom event name, eg. (`click`, `dblclick`, etc.)
  - `listener` a javascript callback function
+
+> [Back to top](#table-of-contents)
 
 ### DOM Events
 
@@ -492,6 +555,8 @@ A pointing device is moved off the element that has the listener attached.
 ##### `mousemove` Dom.onMouseMove(`element|nodeList|Array`, `listener`)
 A pointing device is moved over an element.
 
+> [Back to top](#table-of-contents)
+
 
 ### Form Events
 
@@ -513,6 +578,8 @@ A form is submitted.
 ##### `reset` Dom.onReset(`element|nodeList|Array`, `listener`)
 A form is reset.
 
+> [Back to top](#table-of-contents)
+
 ### Keyboard Events
 
 ##### `keydown` Dom.onKeyDown(`element|nodeList|Array`, `listener`)
@@ -524,6 +591,8 @@ A key is released.
 ##### `keypress` Dom.onKeyPress(`element|nodeList|Array`, `listener`)
 A key is pressed down and that key normally produces a character value (use input instead).
 
+> [Back to top](#table-of-contents)
+
 ### Drag Events
 
 ##### `drag` Dom.onDrag(`element|nodeList|Array`, `listener`)
@@ -534,6 +603,8 @@ The user starts dragging an element or text selection.
 
 ##### `dragend` Dom.onDragEnd(`element|nodeList|Array`, `listener`)
 A drag operation is being ended (by releasing a mouse button or hitting the escape key).
+
+> [Back to top](#table-of-contents)
 
 ### UI Events
 
@@ -548,3 +619,5 @@ The document or a dependent resource is being unloaded.
 
 ##### `resize` Dom.onResize(`element|nodeList|Array`, `listener`)
 The document view has been resized.
+
+> [Back to top](#table-of-contents)
