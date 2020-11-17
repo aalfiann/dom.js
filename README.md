@@ -1,9 +1,10 @@
-> This is a forked version, because the original project seems not active.
+> This is a forked version, because the original project seems not using *strict mode* because to support more older browser.  
+The difference with the original version is this library is using *ES5*.
 
 DOM.js
 ======
 
-DOM.js is a lightweight, fast cross browser (IE 8+, FF31+, SF5+, CH31+, OP24+) library for DOM traversal, manipulation and event handling.
+DOM.js is a lightweight, fast cross browser (IE 10+, FF21+, SF6+, CH23+, OP15+) library for DOM traversal, manipulation and event handling.
 Dom.js also includes drag library for simplify crossbrowser drag operations.
 
 Only 5KB compressed and gzipped!
